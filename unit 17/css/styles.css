@@ -1,86 +1,125 @@
-/* Reset some default styles */
-* {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 50%; /* Make the page twice as tall */
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background: #333;
+    height: 100%;
     color: white;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: antiquewhite;
+  }
+  .image {
+    background-image: url('../img/IMG_0668.JPG');
+    background-size:contain;
+    background-repeat:no-repeat;
+    height: 500px;
+    background-position: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
     top: 0;
-}
+    background: #000000;
+    padding: .8rem 1.25rem;
+    z-index: 1000;
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    /* .nav-left {
+        justify-self: flex-start;
+    } */
+  }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: rgb(147, 147, 147);
+  
+  .navbar a {
+    color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ccc;
-}
-h1 {
-    padding-top: 17rem;
-}
-.main {
-    padding-top: 60px; /* Give some space for the fixed header */
-}
-
-section {
+    margin-left: .9rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+    text-underline-position: below;
+    text-underline-offset: 3px;
+  }
+  
+  .hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 50px 20px;
-}
-
-.btn {
-    display: inline-block;
+    color: black;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+  }
+  
+  .download-button {
     padding: 10px 20px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
     margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .download-button:hover {
     background: black;
     color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #555;
-}
-
-footer {
+  }
+  
+  .section {
+    padding: 50px;
+   
+    background-color: black;
+  }
+  
+  .section:nth-of-type(odd) {
+    background-color: black;
+  }
+  
+  .section h2 {
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+  }
+  
+  .section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .footer {
+    position: relative;
+    background: black;
+    color: white;
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: rgb(147, 147, 147);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  
 
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-/* NEW CODE AFTR THIS POINT!*/
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: .9rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    text-underline-position: below;
+    text-underline-offset: 3px;
+  }
